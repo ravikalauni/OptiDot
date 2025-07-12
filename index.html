@@ -10,37 +10,45 @@
 <body>
     <!-- Navigation -->
     <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-content">
-                <div class="logo">
-                    <img src="images/logo.png" alt="" class="logo-opti">
-                </div>
-                
-                <!-- Desktop Menu -->
-                <div class="nav-menu">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="services.html" class="nav-link">Services</a>
-                    <a href="portfolio.html" class="nav-link">Portfolio</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="contact.html" class="nav-button">Contact us</a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span class="hamburger"></span>
+    <div class="nav-container">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="" class="logo-opti">
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-button">Contact us</a>
+                <!-- Add theme toggle button -->
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
                 </button>
             </div>
             
-            <!-- Mobile Menu -->
-            <div class="mobile-menu" id="mobileMenu">
-                <a href="index.html" class="mobile-nav-link">Home</a>
-                <a href="services.html" class="mobile-nav-link">Services</a>
-                <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
-                <a href="about.html" class="mobile-nav-link">About</a>
-                <a href="contact.html" class="mobile-nav-button">Contact us</a>
-            </div>
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="hamburger"></span>
+            </button>
         </div>
-    </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="contact.html" class="mobile-nav-button">Contact us</a>
+            <!-- Add theme toggle to mobile menu -->
+            <button id="mobileThemeToggle" class="mobile-nav-link theme-toggle">
+                <i class="fas fa-moon"></i> Toggle Theme
+            </button>
+        </div>
+    </div>
+</nav>
 
     <!-- Particle Background -->
     <div class="particle-background">
@@ -49,29 +57,21 @@
 
     <!-- Hero Section -->
    <!-- Hero Section -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    We don't follow<br>
-                    the trends,<br>
-                    <span class="text-orange">We create them.</span>
-                </h1>
-                <p class="hero-subtitle">
-                    OptiDot is a creative digital marketing startup proudly built from scratch by passionate creators and developers.
-                </p>
-                <a href="contact.html" class="cta-button">Get Started</a>
-            </div>
-            
-            <!-- Move the diamond shape inside hero-text div -->
-            <div class="hero-image">
-                <div class="diamond-shape">
-                    <img src="images/markeing photo.png" alt="Creative digital marketing team">
-                </div>
-            </div>
+<section class="hero" style="background: linear-gradient(135deg, var(--deep-blue) 0%, var(--space-blue) 100%);">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text" data-aos="fade-right">
+        <h1 class="hero-title">We don't follow trends,<br><span class="text-orange">We create them.</span></h1>
+        <p class="hero-subtitle">OptiDot is a creative digital marketing startup built by passionate creators.</p>
+        <a href="contact.html" class="cta-button pulse-animate">Get Started →</a>
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <div class="diamond-shape floating">
+          <img src="images/markeing photo.png" alt="Creative digital marketing team">
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
     <!-- Follow Section -->
